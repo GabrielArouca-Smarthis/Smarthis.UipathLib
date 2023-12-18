@@ -1,0 +1,72 @@
+<sap:ActivityDesigner
+    d:DataContext="{d:DesignInstance}"
+    mc:Ignorable="d"
+    x:Class="Smarthis.UiPathLib.Activities.Design.Designers.StringToSecureStringDesigner"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:activity="clr-namespace:Smarthis.UiPathLib.Activities.Properties;assembly=Smarthis.UiPathLib.Activities"
+    xmlns:converters="clr-namespace:UiPath.Shared.Activities.Design.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <sap:ActivityDesigner.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Themes\Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <converters:ActivityIconConverter x:Key="ActivityIconConverter" />
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+        </ResourceDictionary>
+    </sap:ActivityDesigner.Resources>
+
+    <sap:ActivityDesigner.Icon>
+        <DrawingBrush Drawing="{Binding Path=ModelItem, Converter={StaticResource ActivityIconConverter}, ConverterParameter=pack://application:\,\,\,/Smarthis.UiPathLib.Activities.Design;component/themes/icons.xaml}" Stretch="Uniform" />
+    </sap:ActivityDesigner.Icon>
+
+    <StackPanel>
+        <Label
+            Content="{x:Static activity:Resources.StringToSecureString_UnsecuredString_DisplayName}"
+            Margin="0,0,0,0"
+            Padding="0,0,0,0"
+            ToolTip="{x:Static activity:Resources.StringToSecureString_UnsecuredString_Description}" />
+        <sapv:ExpressionTextBox
+            ExpressionType="{Binding ModelItem.Properties[UnsecuredString].PropertyType.GenericTypeArguments[0]}"
+            HintText="{x:Static activity:Resources.StringToSecureString_UnsecuredString_Description}"
+            OwnerActivity="{Binding Path=ModelItem}"
+            UseLocationExpression="False">
+            <sapv:ExpressionTextBox.Expression>
+                <Binding
+                    Converter="{StaticResource ArgumentToExpressionConverter}"
+                    ConverterParameter="In"
+                    Mode="TwoWay"
+                    Path="ModelItem.UnsecuredString"
+                    UpdateSourceTrigger="PropertyChanged" />
+            </sapv:ExpressionTextBox.Expression>
+        </sapv:ExpressionTextBox>
+        <Label
+            Content="{x:Static activity:Resources.StringToSecureString_SecuredString_DisplayName}"
+            Margin="0,0,0,0"
+            Padding="0,0,0,0"
+            ToolTip="{x:Static activity:Resources.StringToSecureString_SecuredString_Description}" />
+        <sapv:ExpressionTextBox
+            ExpressionType="{Binding ModelItem.Properties[SecuredString].PropertyType.GenericTypeArguments[0]}"
+            HintText="{x:Static activity:Resources.StringToSecureString_SecuredString_Description}"
+            OwnerActivity="{Binding Path=ModelItem}"
+            UseLocationExpression="True">
+            <!--  NOTE: OutArguments will not work with out this being set to true!  -->
+            <sapv:ExpressionTextBox.Expression>
+                <Binding
+                    Converter="{StaticResource ArgumentToExpressionConverter}"
+                    ConverterParameter="Out"
+                    Mode="TwoWay"
+                    Path="ModelItem.SecuredString"
+                    UpdateSourceTrigger="PropertyChanged" />
+                <!--  ConverterParameter needs to be set to 'Out' for OutArguments.  -->
+            </sapv:ExpressionTextBox.Expression>
+        </sapv:ExpressionTextBox>
+    </StackPanel>
+
+</sap:ActivityDesigner>

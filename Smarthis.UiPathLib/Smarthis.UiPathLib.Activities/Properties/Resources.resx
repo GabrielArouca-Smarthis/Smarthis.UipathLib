@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContinueOnError_Description" xml:space="preserve">
+    <value>If set, continue executing the remaining activities even if the current activity has failed.</value>
+  </data>
+  <data name="ContinueOnError_DisplayName" xml:space="preserve">
+    <value>ContinueOnError</value>
+  </data>
+  <data name="Do" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="Common_Category" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="Output_Category" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="ValidationScope_Error" xml:space="preserve">
+    <value>Cannot be used outside of a {0}.</value>
+  </data>
+  <data name="ValidationValue_Error" xml:space="preserve">
+    <value>Please provide a value for {0}.</value>
+  </data>
+  <data name="DebugLog_DisplayName" xml:space="preserve">
+    <value>Debug Log</value>
+  </data>
+  <data name="DebugLog_Description" xml:space="preserve">
+    <value>If specified a debug log will be produced in the specified file.</value>
+  </data>
+  <data name="SecureStringToString_DisplayName" xml:space="preserve">
+    <value>SecureString to String</value>
+  </data>
+  <data name="SecureStringToString_Description" xml:space="preserve">
+    <value>Convert a SecureString to a String</value>
+  </data>
+  <data name="SecureStringToString_SecuredString_DisplayName" xml:space="preserve">
+    <value>SecureString to be converted</value>
+  </data>
+  <data name="SecureStringToString_SecuredString_Description" xml:space="preserve">
+    <value>Fill with a SecureString variable</value>
+  </data>
+  <data name="SecureStringToString_UnsecuredString_DisplayName" xml:space="preserve">
+    <value>Converted String</value>
+  </data>
+  <data name="SecureStringToString_UnsecuredString_Description" xml:space="preserve">
+    <value>Fill with a String variable</value>
+  </data>
+  <data name="StringToSecureString_DisplayName" xml:space="preserve">
+    <value>String to SecureString</value>
+  </data>
+  <data name="StringToSecureString_Description" xml:space="preserve">
+    <value>Convert a String to a SecureString</value>
+  </data>
+  <data name="StringToSecureString_SecuredString_DisplayName" xml:space="preserve">
+    <value>Converted SecureString</value>
+  </data>
+  <data name="StringToSecureString_SecuredString_Description" xml:space="preserve">
+    <value>Fill with a SecureString variable.</value>
+  </data>
+  <data name="StringToSecureString_UnsecuredString_DisplayName" xml:space="preserve">
+    <value>String to be converted</value>
+  </data>
+  <data name="StringToSecureString_UnsecuredString_Description" xml:space="preserve">
+    <value>Fill with a String variable</value>
+  </data>
+  <data name="SolveCaptcha_CaptchaKey_Description" xml:space="preserve">
+    <value>Unique identifier key of the captcha container</value>
+  </data>
+  <data name="SolveCaptcha_CaptchaKey_DisplayName" xml:space="preserve">
+    <value>Captcha Key</value>
+  </data>
+  <data name="SolveCaptcha_CaptchaType_Description" xml:space="preserve">
+    <value>Type of captcha to be solved</value>
+  </data>
+  <data name="SolveCaptcha_CaptchaType_DisplayName" xml:space="preserve">
+    <value>Captcha Type</value>
+  </data>
+  <data name="SolveCaptcha_Description" xml:space="preserve">
+    <value>Solve Captchas, reCaptchas and hCatpchas</value>
+  </data>
+  <data name="SolveCaptcha_DisplayName" xml:space="preserve">
+    <value>Solve Captcha</value>
+  </data>
+  <data name="SolveCaptcha_ImageUrl_Description" xml:space="preserve">
+    <value>Url where the captcha image is hosted</value>
+  </data>
+  <data name="SolveCaptcha_ImageUrl_DisplayName" xml:space="preserve">
+    <value>Image Url</value>
+  </data>
+  <data name="SolveCaptcha_ResolutionToken_Description" xml:space="preserve">
+    <value>Token with the code that identifies the resolution</value>
+  </data>
+  <data name="SolveCaptcha_ResolutionToken_DisplayName" xml:space="preserve">
+    <value>Resolution Token</value>
+  </data>
+  <data name="SolveCaptcha_SiteUrl_Description" xml:space="preserve">
+    <value>Fill with the url where the captcha is located</value>
+  </data>
+  <data name="SolveCaptcha_SiteUrl_DisplayName" xml:space="preserve">
+    <value>Site Url</value>
+  </data>
+  <data name="SolveCaptcha_BaseApiUrl" xml:space="preserve">
+    <value>https://captcha-solver.hub.smarthis.com.br</value>
+  </data>
+  <data name="SolveCaptcha_BaseAuthUrl" xml:space="preserve">
+    <value>https://keycloak.hub.smarthis.com.br</value>
+  </data>
+  <data name="SolveCaptcha_ClientId" xml:space="preserve">
+    <value>captcha-solver</value>
+  </data>
+  <data name="SolveCaptcha_GrantType" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="SolveCaptcha_Password_Description" xml:space="preserve">
+    <value>Please provide a value for password</value>
+  </data>
+  <data name="SolveCaptcha_Password_DisplayName" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SolveCaptcha_Username_Description" xml:space="preserve">
+    <value>Please provide a value for username</value>
+  </data>
+  <data name="SolveCaptcha_Username_DisplayName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Timeout_Description" xml:space="preserve">
+    <value>The amout of time (in seconds) to wait for the operation to be performed before generating an error.
+The default value is 30 seconds.</value>
+  </data>
+  <data name="Timeout_DisplayName" xml:space="preserve">
+    <value>Timeout</value>
+  </data>
+  <data name="Timeout_Error" xml:space="preserve">
+    <value>Timeout reached.</value>
+  </data>
+  <data name="SolveCaptcha_HCaptcha_DisplayName" xml:space="preserve">
+    <value>Hcaptcha</value>
+  </data>
+  <data name="SolveCaptcha_ReCaptcha_DisplayName" xml:space="preserve">
+    <value>ReCaptcha </value>
+  </data>
+  <data name="SolveCaptcha_TextCaptcha_DisplayName" xml:space="preserve">
+    <value>TextCaptcha</value>
+  </data>
+  <data name="SolveCaptcha_HCaptcha_Endpoint" xml:space="preserve">
+    <value>"/api/v1/hcaptcha"</value>
+  </data>
+  <data name="SolveCaptcha_ReCaptcha_Endpoint" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SolveCaptcha_TextCaptcha_Endpoint" xml:space="preserve">
+    <value />
+  </data>
+</root>

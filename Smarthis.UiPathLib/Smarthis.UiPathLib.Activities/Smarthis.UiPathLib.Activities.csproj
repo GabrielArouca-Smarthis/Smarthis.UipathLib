@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+      <NoWarn>1591;1998</NoWarn>
+    <TargetFrameworks>net6.0-windows</TargetFrameworks>
+		<RootNamespace>Smarthis.UiPathLib.Activities</RootNamespace>
+		<AssemblyName>Smarthis.UiPathLib.Activities</AssemblyName>
+    <PackageId>Smarthis.UiPathLib.Activities</PackageId>
+    <Authors>Smarthis</Authors>
+    <Company>Smarthis</Company>
+    <Product>UiPathLib.Activities</Product>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DocumentationFile>bin\$(Configuration)\Smarthis.UiPathLib.Activities.xml</DocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Smarthis.UipathLib.Activities</Title>
+    <RepositoryUrl>https://github.com/smarthis-ai/Smarthis.UiPathLib</RepositoryUrl>
+    <PackageIcon></PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Refit.HttpClientFactory" Version="6.3.2" />
+    <PackageReference Include="System.Text.Json" Version="6.0.9" />
+  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="Microsoft.CodeAnalysis.VisualBasic.Scripting" Condition="'$(TargetFramework)' == 'net461'">
+		  <HintPath>..\..\..\..\..\..\..\Program Files\UiPath\Studio\Microsoft.CodeAnalysis.VisualBasic.Scripting.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Activities" Condition="'$(TargetFramework)' == 'net461'">
+		  <HintPath>..\..\..\..\..\..\..\Program Files\UiPath\Studio\System.Activities.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Activities">
+		  <HintPath>..\..\Dependencies\System.Activities.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Activities.Presentation" Condition="'$(TargetFramework)' == 'net461'">
+		  <HintPath>..\..\..\..\..\..\..\Program Files\UiPath\Studio\System.Activities.Presentation.dll</HintPath>
+		</Reference>
+		<Reference Include="UiPath.Workflow">
+		  <HintPath>..\..\Dependencies\UiPath.Workflow.dll</HintPath>
+		</Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.*.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="..\..\Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems" Label="Shared" />
+</Project>
